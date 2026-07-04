@@ -1,7 +1,8 @@
 import { getProducts } from "@/services/productService";
 import ProductCard from "@/components/ProductCard";
-
+import { redirect } from "next/navigation";
 export default async function Home() {
+   
   const products = await getProducts();
 
   return (
